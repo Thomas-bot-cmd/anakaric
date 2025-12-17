@@ -347,7 +347,7 @@ h1 {
 }
 
 #section5 {
-    height: 1900px;
+    height: 2300px;
     background-color: #c47766;
 }
 
@@ -361,14 +361,16 @@ h1 {
     padding: 105px 0;
     height: 180px;
 }
-h2{
+
+h2 {
     font-family: jost, sans-serif;
     font-weight: 700;
     text-align: center;
     padding: 100 0 24.5 0;
     letter-spacing: -1;
 }
-.fet1{
+
+.fet1 {
     background-color: #C77A63;
     height: 120px;
     width: 180px;
@@ -377,19 +379,41 @@ h2{
     align-items: center;
     justify-content: center;
 }
-.mama1{
+
+.fet1:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.mama1 {
     max-width: 100%;
     gap: 15px;
     display: flex;
     justify-content: center;
 }
 
-.mama2{
+.mama2 {
     max-width: 100%;
     gap: 15px;
     display: flex;
     justify-content: center;
     padding: 25px;
+}
+
+.inact {
+    text-align: center;
+    padding: 80 0 24.5 0;
+}
+
+.inact1 {
+    font-family: jost, sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: -1;
+}
+
+.inact2 {
+    font-family: jost, sans-serif;
 }
 
 .testimonials {
@@ -494,34 +518,36 @@ h2{
 }
 
 .client-carousel img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: auto;
-  transition: transform 0.5s ease, opacity 0.5s ease;
-  background-color: #C16A54;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    background-color: #C16A54;
 }
 
 /* smaller by default */
 .client-carousel .slick-slide img {
-  transform: scale(0.85);
-  opacity: 0.6;
+    transform: scale(0.85);
+    opacity: 0.6;
 }
 
 /* center logo grows */
 .client-carousel .slick-center img {
-  transform: scale(1.1);
-  opacity: 1;
+    transform: scale(1.1);
+    opacity: 1;
 }
 
 /* dots color (optional) */
 .slick-dots li button:before {
-  color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.7);
 }
+
 .slick-dots li.slick-active button:before {
-  color: #fff;
+    color: #fff;
 }
-.client-carousel{
+
+.client-carousel {
     height: 200px;
 }
 
@@ -558,10 +584,12 @@ h2{
 #red1 {
     display: none;
 }
+
 .swiper-button-next,
 .swiper-button-prev {
-  z-index: 20 !important;  /* bring arrows above all */
-  cursor: pointer;
+    z-index: 20 !important;
+    /* bring arrows above all */
+    cursor: pointer;
 }
 
 
