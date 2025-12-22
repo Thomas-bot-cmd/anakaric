@@ -128,7 +128,6 @@ body>*:first-child {
 
 #bottondiv {
     text-align: center;
-
 }
 
 .sec1 {
@@ -416,6 +415,85 @@ h2 {
     font-family: jost, sans-serif;
 }
 
+.inact3 {
+    font-family: jost, sans-serif;
+    font-weight: 700;
+}
+
+#name {
+    background-color: ;
+    font-family: ;
+    width: 530px;
+    height: 45px;
+    border-radius: 15px;
+
+
+}
+
+form {
+    font-family: jost, sans-serif;
+    display: grid;
+    justify-content: center;
+}
+
+label {
+    font-family: jost, sans-serif;
+}
+
+#padd {
+    padding: 0 0 6 0;
+}
+
+.ggs {
+    font-family: jost, sans-serif;
+    padding-top: 25px;
+
+
+}
+.g-recaptcha{
+    padding-top:  20;
+}
+
+.ggs1 {
+    width: 530px;
+    font-size: 15;
+    font-weight: 700;
+    background-color: #b85b3f;
+    letter-spacing: -0.8;
+    cursor: pointer;
+    border: 3px solid #b85b3f;
+
+}
+
+.ggs1:hover {
+    background-color: #c47766;
+    border-color: black;
+    transition: 0.3s ;
+
+}
+
+input {
+    width: 400px;
+    padding: 10px 15px;
+    border: 3px solid #000;
+    /* black border */
+    border-radius: 12px;
+    outline: none;
+    color: #000;
+    /* text color inside */
+    background-color: #c47766;
+    /* white background */
+    font-size: 15px;
+    font-family: jost, sans-serif;
+    font-weight: 420;
+}
+
+
+input::placeholder {
+    color: #000;
+    /* grey placeholder text */
+}
+
 .testimonials {
     padding: 80px 80px;
     height: 290px;
@@ -590,6 +668,67 @@ h2 {
     z-index: 20 !important;
     /* bring arrows above all */
     cursor: pointer;
+}
+
+#section6 {
+    height: 540px;
+    background-color: #000;
+}
+.inlap{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 15.2%;    
+}
+.inlapchld{   
+    border-radius: 25px;    
+}
+#adv{
+    color: #D8C7C7;
+    text-align: center;
+    font-family: jost, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    padding: 100 0 0 0;
+}
+#blogp{
+    display: flex;
+    justify-content: center;
+    padding: 40 0 0 0;
+}
+#lst{
+    position: relative;
+    top: 60%;
+    float: inline-end;   
+    padding-left: 30px; 
+}
+
+#blog{    
+    font-family: jost, sans-serif;
+    background-color:  #A64E32;
+    height: 45px;
+    font-size: 15px;
+    border-radius: 11px;
+    font-weight: 700;
+    line-height: 1.5;
+    max-width: 70%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 9px;
+    padding-right: 9px;
+    cursor: pointer;
+    border: 2px solid  #A64E32;
+}
+#blog:hover {
+    background-color: #F1EFE0;
+    border-color: black;
+    transition: 0.3s;
+}
+
+#section7 {
+    height: 443px;
+    background-color: #D0B3B3;
 }
 
 

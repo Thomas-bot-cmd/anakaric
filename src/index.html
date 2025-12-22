@@ -17,7 +17,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
-
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -225,7 +225,7 @@
                 </div>
             </div>
 
-            <!-- Slick Carousel JS -->
+
             <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
@@ -259,68 +259,124 @@
             <div>
                 <div class="inact">
                     <div class="inact1">Get in on the Action!</div>
-                    <div class="inact2"> Join the crew—exclusive insights and premium goodies delivered right to your inbox.
-                        <br>{I keep it real: No spam. Just the good stuff.}
-                    </div>
+                    <div class="inact2"> Join the crew—exclusive insights and premium goodies delivered right to your
+                        inbox.</div>
+                    <div class="inact3">{I keep it real: No spam. Just the good stuff.}</div>
+
                 </div>
 
             </div>
+            <form id="subscribeForm" action="https://formspree.io/f/xnjajnaq" method="post">
+                <div>
+                    <section id="padd"><label for="name"> EMAIL </label><br></section>
+                    <input type="email" id="name" name="name" placeholder="YOUR EMAIL" required>
+                </div>
+                <div class="g-recaptcha" data-sitekey="6LeRDjEsAAAAADJAxXQ7cX1eP6LzrhEc1yrZBalx"></div>
+                <p id="errorMsg" style="color:red;  display:none;"></p>
+                <section class="ggs"><input type="submit" class="ggs1" value="SUBSCRIBE"></section>
 
+            </form>
         </div>
     </div>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <div id="section6">
+        <section id="">
+            <div>
+                <section style="text-align: center;" id="adv">Practical advice that work—from someone who’s been there.
+                </section>
+                <section id="blogp">
+                    <button id="blog">(ACTUALLY) USEFUL BLOG</button>
+                </section>
+            </div>
+        </section>
+        <div class="inlap">
+            <img src="https://anakaric.com/wp-content/uploads/2024/05/Lets-connect-Ana-Karic.webp" class="inlapchld"
+                height="450px" width="59.1%" alt="anakaric">
+        </div>
+    </div>
+    <div id="section7">
+        <div id="rgt">
 
-    <script>
-        new Swiper(".testimonial-swiper", {
-            slidesPerView: 2,
-            spaceBetween: 20,
-            loop: true,
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            breakpoints: {
-                0: {
-                    slidesPerView: 1,
+            <div>AK Business Solutions LLC 2025. All Right Reserved</div>
+            <div>Made by General Condition</div>
+            <div>hello@anakaric.com</div>
+        </div>
+        <div id="lst">
+            <div>
+                <div>tik tok <span style="padding-left: 20px;"> Privacy policy </span></div>
+                <div>linkedin <span style="padding-left: 20px;"> terms of service</span></div>
+                <div>instagram
+                <div>Pinterest</div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <script>
+            new Swiper(".testimonial-swiper", {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                loop: true,
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
                 },
-                768: {
-                    slidesPerView: 2,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
                 },
-            },
-        });
-    </script>
-    <script>
-        $(document).ready(function () {
-            $('.client-carousel').slick({
-                slidesToShow: 5,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 2500,
-                dots: true,
-                centerMode: true,
-                centerPadding: '40px',
-                arrows: false,
-                speed: 1200,
-                cssEase: 'ease-in-out',
-                pauseOnHover: true,
-                responsive: [
-                    { breakpoint: 1024, settings: { slidesToShow: 3, centerPadding: '20px' } },
-                    { breakpoint: 768, settings: { slidesToShow: 2, centerPadding: '10px' } },
-                    { breakpoint: 480, settings: { slidesToShow: 1, centerPadding: '0px' } }
-                ]
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+                    0: {
+                        slidesPerView: 1,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                    },
+                },
             });
-        });
+        </script>
+        <script>
+            $(document).ready(function () {
+                $('.client-carousel').slick({
+                    slidesToShow: 5,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 2500,
+                    dots: true,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    arrows: false,
+                    speed: 1200,
+                    cssEase: 'ease-in-out',
+                    pauseOnHover: true,
+                    responsive: [
+                        { breakpoint: 1024, settings: { slidesToShow: 3, centerPadding: '20px' } },
+                        { breakpoint: 768, settings: { slidesToShow: 2, centerPadding: '10px' } },
+                        { breakpoint: 480, settings: { slidesToShow: 1, centerPadding: '0px' } }
+                    ]
+                });
+            });
 
-    </script>
+        </script>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <script>
+            document.getElementById('subscribeForm').addEventListener('submit', function (e) {
+                const captchaResponse = grecaptcha.getResponse();
+                const errorMsg = document.getElementById('errorMsg');
 
+                if (captchaResponse.length === 0) {
+                    e.preventDefault(); // Stop form submission
+                    errorMsg.textContent = "The Captcha field cannot be blank. Please enter a value.";
+                    errorMsg.style.display = "block";
+                } else {
+                    errorMsg.style.display = "none"; // hide error if captcha completed
+                }
+            });
+        </script>
 </body>
 
 </html>
