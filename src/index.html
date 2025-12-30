@@ -42,7 +42,31 @@
         <div class="hero1">I'm Ana Karic.</div>
         <div class="small">Let’s build & grow your business online.</div>
     </div>
+
     <div id="section2">
+
+        <section class="hero-animated">
+            <h1 class="cd-headline">
+                <span class="cd-words-wrapper">
+                    <b class="is-visible">Let's</b>
+                    <b>Talk</b>
+                    <b>Bigger</b>
+                    <b>Better</b>
+                    <b>Faster</b>
+                    <b>Growth!*</b>
+                </span>
+            </h1>
+
+            <div class="cta-area">
+                <p class="helper-text">
+                    <span style="color: #C3562F;">*</span> <i>I’ll help you build an online presence that thrives, not
+                        just exists.</i>
+                </p>
+
+            </div>
+        </section>
+
+
         <div id="bottondiv">
             <button class="button">FREE STUFF TO KICK THINGS OFF!</button>
         </div>
@@ -248,7 +272,7 @@
             <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
         </div>
-        <div class="featured-in" >
+        <div class="featured-in">
             <h2>Featured in</h2>
             <div>
                 <div class="mama1">
@@ -301,7 +325,7 @@
                     <section id="padd"><label for="name"> EMAIL </label><br></section>
                     <input type="email" id="name" name="name" placeholder="YOUR EMAIL" required>
                 </div>
-                <div class="g-recaptcha" data-sitekey="6LeRDjEsAAAAADJAxXQ7cX1eP6LzrhEc1yrZBalx"></div>
+                <div class="g-recaptcha" data-sitekey="6Le9PzssAAAAAEW7E7FQv9ep8wMTGhoHEBos0aK7"></div>
                 <p id="errorMsg" style="color:red;  display:none;"></p>
                 <section class="ggs"><input type="submit" class="ggs1" value="SUBSCRIBE"></section>
 
@@ -435,6 +459,22 @@
         window.addEventListener('load', () => {
             document.querySelector('.hero-section').classList.add('active');
         });
+    </script>
+
+    <script>
+        const words = document.querySelectorAll(".cd-words-wrapper b");
+        let i = 0;
+
+        function changeWord() {
+            words[i].classList.remove("is-visible");
+            words[i].classList.add("is-hidden");
+            i = (i + 1) % words.length;
+            words[i].classList.remove("is-hidden");
+            words[i].classList.add("is-visible");
+        }
+
+        setInterval(changeWord, 2700); // keep same interval as animation
+
     </script>
 
 

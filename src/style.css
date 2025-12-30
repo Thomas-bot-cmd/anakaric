@@ -2,7 +2,7 @@ html,
 body {
     margin: 0px;
     padding: 0px;
-    background-color: #c47766;
+    background-color: rgb(0, 0, 0);
 }
 
 body>*:first-child {
@@ -38,6 +38,36 @@ body>*:first-child {
 
 }
 
+
+
+/* when hovered */
+#zxz:hover {
+    transform: scale(1.2) translateY(-10px);
+    /* grow and lift */
+    animation: bounce 0.6s ease;
+    /* quick bounce */
+}
+
+/* bounce keyframes */
+@keyframes bounce {
+    0% {
+        transform: scale(1) translateY(0);
+    }
+
+    30% {
+        transform: scale(1.25) translateY(-12px);
+    }
+
+    50% {
+        transform: scale(1.15) translateY(-6px);
+    }
+
+    100% {
+        transform: scale(1.2) translateY(-10px);
+    }
+}
+
+
 .hero {
     font-size: 176px;
     font-weight: 700;
@@ -72,46 +102,50 @@ body>*:first-child {
     color: rgb(0 0 0);
     padding-top: 12px;
 }
+
 /* Hero animations (slide up instantly) */
 .hero-section .hero,
 .hero-section .hero1,
 .hero-section .small {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 1s ease-out;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s ease-out;
 }
 
 .hero-section.active .hero {
-  opacity: 1;
-  transform: translateY(0);
-  transition-delay: 0.1s;
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.1s;
 }
+
 .hero-section.active .hero1 {
-  opacity: 1;
-  transform: translateY(0);
-  transition-delay: 0.3s;
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.3s;
 }
+
 .hero-section.active .small {
-  opacity: 1;
-  transform: translateY(0);
-  transition-delay: 0.5s;
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.5s;
 }
 
 /* Image slide from right */
 #img1 {
-  opacity: 0;
-  transform: translateX(80px);
-  transition: all 1s ease-out;
+    opacity: 0;
+    transform: translateX(80px);
+    transition: all 1s ease-out;
 }
+
 #img.active #img1 {
-  opacity: 1;
-  transform: translateX(0);
+    opacity: 1;
+    transform: translateX(0);
 }
 
 
 .scale-section.active {
-  opacity: 1;
-  transform: scale(1) translateY(0);
+    opacity: 1;
+    transform: scale(1) translateY(0);
 }
 
 
@@ -124,78 +158,82 @@ body>*:first-child {
 .scale-section .sec1,
 .scale-section .sec2,
 .scale-section .sec3 {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.9s ease-out;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.9s ease-out;
 }
 
 .scale-section.active .sec1,
 .scale-section.active .he,
-.scale-section.active #dot{
-  opacity: 1;
-  transform: translateY(0);
-  transition-delay: 0.2s;
+.scale-section.active #dot {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.2s;
 }
+
 .scale-section.active .sec2,
 .scale-section.active .he1,
-.scale-section.active #dot1  {
-  opacity: 1;
-  transform: translateY(0);
-  transition-delay: 0.4s;
+.scale-section.active #dot1 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.4s;
 }
+
 .scale-section.active .sec3,
 .scale-section.active .he2,
 .scale-section.active #dot2 {
-  opacity: 1;
-  transform: translateY(0);
-  transition-delay: 0.6s;
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.6s;
 }
 
 /* Default hidden state */
 .featured-in {
-  opacity: 0;
-  transform: translateY(80px);
-  transition: all 1s ease-out;
-  will-change: transform, opacity;
+    opacity: 0;
+    transform: translateY(80px);
+    transition: all 1s ease-out;
+    will-change: transform, opacity;
 }
 
 /* When active (scrolls into view) */
 .featured-in.active {
-  opacity: 1;
-  transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* Each logo or item fades in one by one (wave effect) */
 .featured-in .fet1 {
-  opacity: 0;
-  transform: translateY(60px);
-  transition: all 0.8s ease-out;
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 0.8s ease-out;
 }
 
 .featured-in.active .fet1:nth-child(1) {
-  opacity: 1;
-  transform: translateY(0);
-  transition-delay: 0.2s;
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.2s;
 }
+
 .featured-in.active .fet1:nth-child(2) {
-  opacity: 1;
-  transform: translateY(0);
-  transition-delay: 0.4s;
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.4s;
 }
+
 .featured-in.active .fet1:nth-child(3) {
-  opacity: 1;
-  transform: translateY(0);
-  transition-delay: 0.6s;
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.6s;
 }
+
 .featured-in.active .fet1:nth-child(4) {
-  opacity: 1;
-  transform: translateY(0);
-  transition-delay: 0.8s;
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.8s;
 }
 
 #section1 {
     height: 478.997px;
-    background-color: #d66044;
     padding: 67px;
     display: flex;
     flex-direction: column;
@@ -219,10 +257,10 @@ body>*:first-child {
 
 .button {
     font-family: jost, sans-serif;
-    background-color: #FF8C69;
+    background-color: #C3562F;
     height: 39px;
     font-size: 15px;
-    margin: 488px auto;
+    margin: 255px auto;
     border-radius: 11px;
     font-weight: 700;
     line-height: 1.5;
@@ -232,11 +270,24 @@ body>*:first-child {
     padding-left: 9px;
     padding-right: 9px;
     cursor: pointer;
-    border: 2px solid #FF8C69;
-
+    border: 2px solid #C3562F;
+    position: relative;
+    /* or relative depending on layout */
+    z-index: 10;
+    /* higher than the text/animation */
+    cursor: pointer;
 }
 
-
+.cta-area {
+    font-family: jost, sans-serif;
+    position: absolute;
+    top: 186%;
+    color: #b3a3a3;
+    text-align: center;
+    padding-left: 477px;
+    font-size: 13px;
+    font-weight: 700;
+}
 
 
 .button:hover {
@@ -527,40 +578,44 @@ h1 {
 }
 
 #section5 {
-  position: relative;
-  height: 2300px; /* your normal height */
-  overflow: hidden;
-  background: #000; /* fallback if video doesn't load */
-  z-index: 0;
+    position: relative;
+    height: 2300px;
+    /* your normal height */
+    overflow: hidden;
+    background: #000;
+    /* fallback if video doesn't load */
+    z-index: 0;
 }
 
 /* keep video inside section height */
 .bg-video5 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; /* match section height */
-  object-fit: cover; /* fill area neatly without stretching */
-  z-index: 0;
-  pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* match section height */
+    object-fit: cover;
+    /* fill area neatly without stretching */
+    z-index: 0;
+    pointer-events: none;
 }
 
 /* overlay tint */
 .overlay5 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(214, 96, 68, 0.45);
-  z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(214, 96, 68, 0.45);
+    z-index: 1;
 }
 
 /* text and carousel above overlay */
-#section5 > *:not(video):not(.overlay5) {
-  position: relative;
-  z-index: 2;
+#section5>*:not(video):not(.overlay5) {
+    position: relative;
+    z-index: 2;
 }
 
 
@@ -582,8 +637,8 @@ h1 {
 #long2,
 #subscribeForm,
 .client-carousel-wrapper {
-  position: relative;
-  z-index: 2;
+    position: relative;
+    z-index: 2;
 }
 
 #long1 {
@@ -1008,10 +1063,84 @@ a:hover {
     color: #D9822B;
 }
 
-#red:hover {
+#red:hover,
+#zxz:hover {
     color: #B86446;
     cursor: pointer;
 }
+
+.hero-animated {
+    height: 200px;
+}
+
+.cd-words-wrapper {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    font-style: normal;
+    padding-top: 230px;
+    height: 600px;
+    /* adjust height as needed */
+}
+
+.cd-words-wrapper b {
+    position: absolute;
+    left: -100%;
+    /* start offscreen left */
+    opacity: 0;
+    white-space: nowrap;
+    font-size: 3.5em;
+    /* adjust size */
+    transition: none;
+}
+
+.cd-words-wrapper b.is-visible {
+    animation: slideInOut 2.7s forwards;
+    /* matches your JS interval */
+}
+
+@keyframes slideInOut {
+
+    0% {
+        left: -100%;
+        opacity: 0;
+    }
+
+    40% {
+        left: 53%;
+        /* overshoot a bit past center */
+        transform: translateX(-50%);
+        opacity: 1;
+    }
+
+    60% {
+        left: 50%;
+        /* settle back to exact center */
+        transform: translateX(-50%);
+        opacity: 1;
+    }
+
+    75% {
+        left: 50%;
+        /* stay in center longer */
+        transform: translateX(-50%);
+        opacity: 1;
+    }
+
+    90% {
+        left: 60%;
+        /* slide off to the right */
+        opacity: 0;
+    }
+
+    100% {
+        left: 120%;
+        opacity: 0;
+    }
+}
+
+
 
 #blog {
     font-family: jost, sans-serif;
